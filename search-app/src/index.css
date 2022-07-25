@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-color: #C4DFAA;
+}
+
+.App{
+  text-align: center;
+  margin: 2rem;
+}
+
+input{
+  width: 20rem;
+  height: 3rem;
+  margin: 1rem;
+  padding-left: 1rem;
+}
+
+.person-info img{
+  width: min(90%,20rem);
+  min-height: 30rem;
+  margin-top: 1rem;
+}
+
+.person-info{
+  width: min(90%,20rem);
+  text-align: center;
+  background-color: #73A9AD;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+#root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result{
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  width: min(90%,60rem);
+  margin-inline: auto;
+  gap: 1rem;
+  place-items: center;
+}
+
+.move-top{
+  position: relative;
+  bottom: 0;
+  text-align: start;
+  color: #F5F0BB;
+  margin-left: 0.8rem;
+}
+
+.no-result{
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .result{
+    grid-template-columns: repeat(2,2fr);
+  }
+}
+
+@media (max-width: 750px) {
+  .result{
+    grid-template-columns: repeat(1,2fr);
+  }
+}
+
